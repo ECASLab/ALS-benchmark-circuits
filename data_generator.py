@@ -89,13 +89,12 @@ def get_random(bits: int, distribution='uniform', samples=1, **kwargs):
 # from matplotlib import pyplot as plt
 # from scipy.interpolate import UnivariateSpline
 # path='/home/roger/Desktop/Electronica/ALS-benchmark-circuits/sample.txt'
-# dataset_gen(path,[1,2,3,4,5,6,7,8],samples=100000,distribution='gaussian', variance=10)
-#
+# dataset_gen(path,[1,2,3,4,5,6,7,8],samples=1000000,distribution='uniform', variance=1)
+
 # data=np.loadtxt(path)
 # data=np.transpose(data)
-#
-#
-#
+
+
 # N=1000
 # n=N//1
 # for d in data:
@@ -104,4 +103,4 @@ def get_random(bits: int, distribution='uniform', samples=1, **kwargs):
 #     f=UnivariateSpline(x,p,s=n)
 #     plt.plot(x,f(x))
 #     plt.show()
-#
+

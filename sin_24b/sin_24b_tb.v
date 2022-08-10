@@ -2,15 +2,15 @@
 
 module sin_24b_tb(); 
 
- wire [24:0] out0;
+wire [24:0] out0;
  reg [23:0] in0;
 
- integer i, file, mem, temp;
+integer i, file, mem, temp;
 
- sin_24b U0(in0,out0);
+sin_24b U0(in0,out0);
 
- initial begin
- //$display("-- Begining Simulation --");
+initial begin
+ $display("-- Begining Simulation --");
 
  $dumpfile("./sin_24b.vcd");
  $dumpvars(0,sin_24b_tb);
@@ -18,14 +18,14 @@ module sin_24b_tb();
  mem=$fopen("dataset", "r");
  in0 = 0;
  #10
- for (i=0;i<100000;i=i+1) begin
+ for (i=0;i<1000000;i=i+1) begin
   temp=$fscanf(mem,"%d \n",in0);
   #10
   $fwrite(file, "%d\n",{out0});
-  end
-  $fclose(file);
-   $fclose(mem);
-  //$display("-- Ending Simulation --");
-  $finish;
+  $display("-- Progress: %d/1000000 --",i+1);
  end
+ $fclose(file);
+ $fclose(mem);
+ $finish;
+end
 endmodule

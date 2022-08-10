@@ -44,7 +44,7 @@ def tb_generator(topmodule: str, path:str, inputs_length, outputs_length, sample
             text= f'{text}wire out{i};\n'
         else:
             text= f'{text}wire [{l-1}:0] out{i};\n'
-        outputs.append(f'out {i}')
+        outputs.append(f'out{i}')
         i+=1
     i=0
     for l in inputs_length:
@@ -52,7 +52,7 @@ def tb_generator(topmodule: str, path:str, inputs_length, outputs_length, sample
             text= f'{text} reg in{i};\n'
         else:
             text= f'{text} reg [{l-1}:0] in{i};\n'
-        inputs.append(f'in {i}')
+        inputs.append(f'in{i}')
         i+=1
 
     text= f'{text}\n' \
@@ -67,7 +67,7 @@ def tb_generator(topmodule: str, path:str, inputs_length, outputs_length, sample
           f'\n' \
           f'initial begin\n'
     if dump_vcd:
-        text=f'{text} //$display("-- Begining Simulation --");\n' \
+        text=f'{text} $display("-- Begining Simulation --");\n' \
              f'\n' \
              f' $dumpfile("./{topmodule}.vcd");\n' \
              f' $dumpvars(0,{topmodule}_tb);\n'
@@ -89,7 +89,7 @@ def tb_generator(topmodule: str, path:str, inputs_length, outputs_length, sample
     for o in outputs[::-1][0:-1]:
         text= f'{text}{o},'
     text= f'{text}{outputs[0]}'+'});\n'\
-        + f'  $display("--Progress: %d/{samples}--",i+1);\n'\
+        + f'  $display("-- Progress: %d/{samples} --",i+1);\n'\
           f' end\n' \
           f' $fclose(file);\n' \
           f' $fclose(mem);\n' \
@@ -203,7 +203,7 @@ outputs=[
 ]
 for n,p,i,o in zip(name,path,inputs,outputs):
     print(f'Generating {n} testbench and dataset...')
-    dataset_gen(file=os.path.join(p,'dataset'),inputs=i,samples=iter_num)
-    tb_generator(n,p,i,o, dump_vcd=False, samples=iter_num)
+    #dataset_gen(file=os.path.join(p,'dataset'),inputs=i,samples=iter_num)
+    tb_generator(n,p,i,o, dump_vcd=True, samples=iter_num)
     #test_tb(n,p)
 

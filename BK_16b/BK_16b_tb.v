@@ -2,16 +2,16 @@
 
 module BK_16b_tb(); 
 
- wire [16:0] out0;
+wire [16:0] out0;
  reg [15:0] in0;
  reg [15:0] in1;
 
- integer i, file, mem, temp;
+integer i, file, mem, temp;
 
- BK_16b U0(in0,in1,out0);
+BK_16b U0(in0,in1,out0);
 
- initial begin
- //$display("-- Begining Simulation --");
+initial begin
+ $display("-- Begining Simulation --");
 
  $dumpfile("./BK_16b.vcd");
  $dumpvars(0,BK_16b_tb);
@@ -20,16 +20,14 @@ module BK_16b_tb();
  in0 = 0;
  in1 = 0;
  #10
- for (i=0;i<100000;i=i+1) begin
+ for (i=0;i<1000000;i=i+1) begin
   temp=$fscanf(mem,"%d %d \n",in0,in1);
   #10
-  $display("Simulated: %d/100000", i);
   $fwrite(file, "%d\n",{out0});
-  end
-  $fclose(file);
-   $fclose(mem);
-  //$display("-- Ending Simulation --");
-  $finish;
+  $display("-- Progress: %d/1000000 --",i+1);
  end
+ $fclose(file);
+ $fclose(mem);
+ $finish;
+end
 endmodule
-
