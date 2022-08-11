@@ -79,8 +79,8 @@ def vcs_simulate(testbench, source, tech='', dump_saif=False):
   with open(testbench,'r') as file:
    text=file.read()
    if dump_saif:
-    text=text.replace(f'$dumpfile("./{topmodule}.vcd");\n $dumpvars(0,{topmodule}_tb);\n',f'$set_toggle_region({topmodule}_tb);\n $toggle_start();\n')
-    text=text.replace(f'$fclose(file);\n;',f'$toggle_stop();\n $fclose(file);\n')
+    text=text.replace(f'$dumpfile("./{topmodule}.vcd");\n $dumpvars(0,{topmodule}_tb);\n',f'$dumpfile("./{topmodule}.vcd");\n $dumpvars(0,{topmodule}_tb);\n $set_toggle_region({topmodule}_tb);\n $toggle_start();\n')
+    text=text.replace(f'$fclose(file);\n',f'$toggle_stop();\n $toggle_report("{topmodule}.saif",10.0e-9,{topmodule}_tb);\n $fclose(file);\n')
    file.close()
   with open(f'{path}/{topmodule}_tb.v', 'w') as file:
    file.write(text)
@@ -104,6 +104,33 @@ def vcs_simulate(testbench, source, tech='', dump_saif=False):
 '''
 circuits=[
 'BK_16b',
+'BK_32b',
+'fir',
+'KS_16b',
+'KS_32b',
+'Mul_16b',
+'Mul_32b',
+'adder_128b',
+'barshift_128b',
+'div_64b', #Particularmente lento de simular
+'hyp_128b', #Particularmente lento de simular
+'log2_32b',
+'max_128b',
+'mul_64b',
+'sin_24b',
+'sqrt_128b',
+'square_64b',
+'CLA_16b',
+'CSkipA_16b',
+'LFA_16b',
+'RCA_4b',
+'WT_8b',
+'fwrdk2j',
+'invk2j',
+'voter',
+'int2float',
+'dec',
+'sobel'
 ]
 
 tech='./NanGate15nm.v'
