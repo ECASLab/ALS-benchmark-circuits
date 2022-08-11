@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps 
+`timescale 1ns / 1ps
 
 module invk2j_tb(); 
 
@@ -8,7 +8,7 @@ module invk2j_tb();
  reg [31:0] in1;
  reg clk, rst;
 
- integer i, file;
+ integer i, file, mem, temp;
  invk2j U0(in0,in1,out0,out1, clk, rst);
  
  always begin
@@ -17,27 +17,27 @@ module invk2j_tb();
  end
 
  initial begin
- //$display("-- Begining Simulation --");
+ $display("-- Begining Simulation --");
 
- /*
- $dumpfile("./test.vcd");
- $dumpvars(0,fwrdk2j_tb);
- */
+ $dumpfile("./invk2j.vcd");
+ $dumpvars(0,invk2j_tb);
  file=$fopen("output.txt","w");
+ mem=$fopen("dataset","r");
  in0 = 0;
  in1 = 0;
  rst = 1;
- #100
+ #1000
  rst = 0;
- #100
- for (i=0;i<10;i=i+1) begin
-  in0 = $random;
-  in1 = $random;
+ #1000
+ for (i=0;i<1000000;i=i+1) begin
+  temp=$fscanf(mem,"%d %d \n",in0,in1);
   #1000
   $fwrite(file, "%d\n",{out0,out1});
-  end
-  $fclose(file);
-  //$display("-- Ending Simulation --");
-  $finish;
+  $display("-- Progress: %d/1000000 --",i+1);
+ end
+ $fclose(file);
+ $fclose(mem);
+ $display("-- Ending Simulation --");
+ $finish;
  end
 endmodule
