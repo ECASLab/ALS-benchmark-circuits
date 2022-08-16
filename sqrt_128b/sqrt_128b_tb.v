@@ -19,7 +19,7 @@ initial begin
  in0 = 0;
  #10
  for (i=0;i<1000000;i=i+1) begin
-  temp=$fscanf(mem,"%d \n",in0);
+  temp=$fscanf(mem,"%h \n",in0);
   #10
   $fwrite(file, "%d\n",{out0});
   $display("-- Progress: %d/1000000 --",i+1);

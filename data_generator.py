@@ -11,7 +11,8 @@ import numpy as np
 def dataset_gen(file:str, inputs: list, samples :int, distribution='uniform',**kwargs):
     '''
 
-    Generates a file with with columns of random data, corresponding to n-bits circuit inputs.
+    Generates a file with columns of random data, corresponding to n-bits circuit inputs.
+    Data are stored in Hex numbers.
 
     :param file: File to save the dataset.
     :param inputs: A list of number of bits for each input. For each number n in the list,
@@ -29,16 +30,17 @@ def dataset_gen(file:str, inputs: list, samples :int, distribution='uniform',**k
     text=''
     data=[]
     for n in inputs:
-        data.append(get_random(n,distribution,samples,**kwargs))
-    data=np.transpose(data)
-    file=np.savetxt(file, data, fmt='%d')
+        s=get_random(n,distribution,samples,**kwargs)
+        data.append([hex(i)[2:] for i in s])
+    data=list(zip(*data))
+    file=np.savetxt(file, data, fmt='%s')
 
     return file
 
 def get_random(bits: int, distribution='uniform', samples=1, **kwargs):
     '''
 
-    Generates a random number according to a probability distribution using inverse CDF.
+    Generates a random number according to a probability distribution.
 
     :param bits: Number of bits for generated data.
     :param distribution: Desired distribution of probability for the random data.
