@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : WT_8b
+Version: R-2020.09-SP5-1
+Date   : Thu Aug 18 19:38:24 2022
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /mnt/vol_NFS_rh003/Estudiantes_Jorge_Castro/tech_libs/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate15nm.db)
+
+Number of ports:                           32
+Number of nets:                           330
+Number of cells:                          314
+Number of combinational cells:            314
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         39
+Number of references:                      16
+
+Combinational area:                 92.356609
+Buf/Inv area:                        5.750784
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    92.356609
+Total area:                 undefined
+1
