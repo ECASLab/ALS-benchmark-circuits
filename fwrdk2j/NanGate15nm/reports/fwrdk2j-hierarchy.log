@@ -1,0 +1,51 @@
+ 
+****************************************
+Report : hierarchy
+Design : fwrdk2j
+Version: R-2020.09-SP5-1
+Date   : Fri Aug 19 14:48:35 2022
+****************************************
+
+fwrdk2j
+    AND2_X1                       NanGate_15nm_OCL
+    AND3_X1                       NanGate_15nm_OCL
+    AND3_X2                       NanGate_15nm_OCL
+    AND4_X1                       NanGate_15nm_OCL
+    AOI21_X1                      NanGate_15nm_OCL
+    AOI22_X1                      NanGate_15nm_OCL
+    INV_X1                        NanGate_15nm_OCL
+    MUX2_X1                       NanGate_15nm_OCL
+    NAND2_X1                      NanGate_15nm_OCL
+    NAND3_X1                      NanGate_15nm_OCL
+    NAND4_X1                      NanGate_15nm_OCL
+    NOR2_X1                       NanGate_15nm_OCL
+    NOR3_X1                       NanGate_15nm_OCL
+    NOR4_X1                       NanGate_15nm_OCL
+    OAI21_X1                      NanGate_15nm_OCL
+    OAI22_X1                      NanGate_15nm_OCL
+    OR2_X1                        NanGate_15nm_OCL
+    OR3_X1                        NanGate_15nm_OCL
+    OR4_X1                        NanGate_15nm_OCL
+    XNOR2_X1                      NanGate_15nm_OCL
+    XOR2_X1                       NanGate_15nm_OCL
+    fwrdk2j_DW01_addsub_0
+        AND2_X1                   NanGate_15nm_OCL
+        FA_X1                     NanGate_15nm_OCL
+        INV_X1                    NanGate_15nm_OCL
+        NOR2_X1                   NanGate_15nm_OCL
+        XOR2_X1                   NanGate_15nm_OCL
+    fwrdk2j_DW01_addsub_1
+        AND2_X1                   NanGate_15nm_OCL
+        FA_X1                     NanGate_15nm_OCL
+        INV_X1                    NanGate_15nm_OCL
+        NOR2_X1                   NanGate_15nm_OCL
+        XOR2_X1                   NanGate_15nm_OCL
+    fwrdk2j_DW01_addsub_2
+        FA_X1                     NanGate_15nm_OCL
+        XOR2_X1                   NanGate_15nm_OCL
+    fwrdk2j_DW01_cmp2_2
+        AND2_X1                   NanGate_15nm_OCL
+        INV_X1                    NanGate_15nm_OCL
+        NOR2_X1                   NanGate_15nm_OCL
+        OAI22_X1                  NanGate_15nm_OCL
+1

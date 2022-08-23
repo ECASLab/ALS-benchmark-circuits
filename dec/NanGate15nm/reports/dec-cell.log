@@ -1,0 +1,638 @@
+ 
+****************************************
+Report : cell
+Design : dec
+Version: R-2020.09-SP5-1
+Date   : Fri Aug 19 15:56:17 2022
+****************************************
+
+Attributes:
+    b - black box (unknown)
+    h - hierarchical
+    n - noncombinational
+    r - removable
+    u - contains unmapped logic
+
+Cell                      Reference       Library             Area  Attributes
+--------------------------------------------------------------------------------
+U310                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U311                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U312                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U313                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U314                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U315                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U316                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U317                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U318                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U319                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U320                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U321                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U322                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U323                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U324                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U325                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U326                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U327                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U328                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U329                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U330                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U331                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U332                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U333                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U334                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U335                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U336                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U337                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U338                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U339                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U340                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U341                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U342                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U343                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U344                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U345                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U346                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U347                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U348                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U349                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U350                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U351                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U352                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U353                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U354                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U355                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U356                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U357                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U358                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U359                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U360                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U361                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U362                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U363                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U364                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U365                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U366                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U367                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U368                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U369                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U370                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U371                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U372                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U373                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U374                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U375                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U376                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U377                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U378                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U379                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U380                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U381                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U382                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U383                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U384                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U385                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U386                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U387                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U388                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U389                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U390                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U391                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U392                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U393                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U394                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U395                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U396                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U397                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U398                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U399                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U400                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U401                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U402                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U403                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U404                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U405                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U406                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U407                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U408                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U409                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U410                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U411                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U412                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U413                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U414                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U415                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U416                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U417                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U418                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U419                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U420                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U421                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U422                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U423                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U424                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U425                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U426                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U427                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U428                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U429                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U430                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U431                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U432                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U433                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U434                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U435                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U436                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U437                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U438                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U439                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U440                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U441                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U442                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U443                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U444                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U445                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U446                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U447                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U448                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U449                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U450                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U451                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U452                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U453                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U454                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U455                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U456                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U457                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U458                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U459                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U460                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U461                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U462                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U463                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U464                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U465                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U466                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U467                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U468                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U469                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U470                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U471                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U472                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U473                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U474                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U475                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U476                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U477                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U478                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U479                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U480                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U481                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U482                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U483                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U484                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U485                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U486                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U487                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U488                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U489                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U490                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U491                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U492                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U493                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U494                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U495                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U496                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U497                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U498                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U499                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U500                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U501                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U502                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U503                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U504                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U505                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U506                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U507                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U508                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U509                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U510                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U511                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U512                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U513                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U514                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U515                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U516                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U517                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U518                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U519                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U520                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U521                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U522                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U523                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U524                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U525                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U526                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U527                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U528                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U529                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U530                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U531                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U532                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U533                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U534                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U535                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U536                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U537                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U538                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U539                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U540                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U541                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U542                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U543                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U544                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U545                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U546                      AND2_X1         NanGate_15nm_OCL
+                                                          0.294912  
+U547                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U548                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U549                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U550                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U551                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U552                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U553                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U554                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U555                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U556                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U557                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U558                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U559                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U560                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U561                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U562                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U563                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U564                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U565                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U566                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U567                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U568                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U569                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U570                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U571                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U572                      AND2_X1         NanGate_15nm_OCL
+                                                          0.294912  
+U573                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U574                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U575                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U576                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U577                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U578                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U579                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U580                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U581                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U582                      AND2_X1         NanGate_15nm_OCL
+                                                          0.294912  
+U583                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U584                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U585                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U586                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U587                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U588                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U589                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U590                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U591                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U592                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U593                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U594                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U595                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U596                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U597                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U598                      INV_X1          NanGate_15nm_OCL
+                                                          0.147456  
+U599                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U600                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U601                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U602                      INV_X1          NanGate_15nm_OCL
+                                                          0.147456  
+U603                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U604                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U605                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U606                      INV_X1          NanGate_15nm_OCL
+                                                          0.147456  
+U607                      AND2_X1         NanGate_15nm_OCL
+                                                          0.294912  
+U608                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U609                      AND2_X1         NanGate_15nm_OCL
+                                                          0.294912  
+U610                      INV_X1          NanGate_15nm_OCL
+                                                          0.147456  
+U611                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U612                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U613                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U614                      AND2_X1         NanGate_15nm_OCL
+                                                          0.294912  
+U615                      INV_X1          NanGate_15nm_OCL
+                                                          0.147456  
+U616                      NAND2_X1        NanGate_15nm_OCL
+                                                          0.196608  
+U617                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+U618                      NOR2_X1         NanGate_15nm_OCL
+                                                          0.196608  
+--------------------------------------------------------------------------------
+Total 309 cells                                           61.095938
+1

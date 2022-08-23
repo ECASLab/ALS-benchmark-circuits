@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : sobel
+Version: R-2020.09-SP5-1
+Date   : Fri Aug 19 16:00:08 2022
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /mnt/vol_NFS_rh003/Estudiantes_Jorge_Castro/tech_libs/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate15nm.db)
+
+Number of ports:                           89
+Number of nets:                           510
+Number of cells:                          442
+Number of combinational cells:            442
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         63
+Number of references:                      16
+
+Combinational area:                148.389889
+Buf/Inv area:                        9.289728
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                   148.389889
+Total area:                 undefined
+1
