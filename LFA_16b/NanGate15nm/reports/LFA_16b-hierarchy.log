@@ -1,0 +1,15 @@
+ 
+****************************************
+Report : hierarchy
+Design : LFA_16b
+Version: R-2020.09-SP5-1
+Date   : Thu Aug 18 19:35:25 2022
+****************************************
+
+LFA_16b
+    AND2_X1          NanGate_15nm_OCL
+    AOI22_X1         NanGate_15nm_OCL
+    INV_X1           NanGate_15nm_OCL
+    XNOR2_X1         NanGate_15nm_OCL
+    XOR2_X1          NanGate_15nm_OCL
+1

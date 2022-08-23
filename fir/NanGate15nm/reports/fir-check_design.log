@@ -1,0 +1,36 @@
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP5-1
+Date:        Fri Aug 12 12:45:59 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                      7
+    Unconnected ports (LINT-28)                                     6
+    Constant outputs (LINT-52)                                      1
+
+Cells                                                               5
+    Connected to power or ground (LINT-32)                          4
+    Nets connected to multiple pins on same cell (LINT-33)          1
+--------------------------------------------------------------------------------
+
+Warning: In design 'fir', port 'x[0]' is not connected to any nets. (LINT-28)
+Warning: In design 'fir_DW01_add_0', port 'A[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'fir_DW01_add_0', port 'B[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'fir_DW01_add_0', port 'B[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'fir_DW01_add_0', port 'CI' is not connected to any nets. (LINT-28)
+Warning: In design 'fir_DW01_add_0', port 'CO' is not connected to any nets. (LINT-28)
+Warning: In design 'fir', a pin on submodule 'add_32' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'A[8]' is connected to logic 0. 
+Warning: In design 'fir', a pin on submodule 'add_32' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[8]' is connected to logic 0. 
+Warning: In design 'fir', a pin on submodule 'add_32' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'B[7]' is connected to logic 0. 
+Warning: In design 'fir', a pin on submodule 'add_32' is connected to logic 1 or logic 0. (LINT-32)
+   Pin 'CI' is connected to logic 0. 
+Warning: In design 'fir', the same net is connected to more than one pin on submodule 'add_32'. (LINT-33)
+   Net 'n39' is connected to pins 'A[8]', 'B[8]'', 'B[7]'.
+Warning: In design 'fir', output port 'dataout[9]' is connected directly to 'logic 0'. (LINT-52)
+1

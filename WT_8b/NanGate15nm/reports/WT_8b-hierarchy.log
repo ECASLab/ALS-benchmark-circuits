@@ -1,0 +1,26 @@
+ 
+****************************************
+Report : hierarchy
+Design : WT_8b
+Version: R-2020.09-SP5-1
+Date   : Thu Aug 18 19:38:24 2022
+****************************************
+
+WT_8b
+    AND2_X1          NanGate_15nm_OCL
+    AND3_X1          NanGate_15nm_OCL
+    AOI21_X1         NanGate_15nm_OCL
+    AOI22_X1         NanGate_15nm_OCL
+    INV_X1           NanGate_15nm_OCL
+    NAND2_X1         NanGate_15nm_OCL
+    NAND3_X1         NanGate_15nm_OCL
+    NAND4_X1         NanGate_15nm_OCL
+    NOR2_X1          NanGate_15nm_OCL
+    NOR3_X1          NanGate_15nm_OCL
+    OAI21_X1         NanGate_15nm_OCL
+    OAI22_X1         NanGate_15nm_OCL
+    OR2_X1           NanGate_15nm_OCL
+    OR3_X1           NanGate_15nm_OCL
+    XNOR2_X1         NanGate_15nm_OCL
+    XOR2_X1          NanGate_15nm_OCL
+1
