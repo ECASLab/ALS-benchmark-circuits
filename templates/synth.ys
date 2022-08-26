@@ -1,0 +1,11 @@
+read_verilog [[RTLFILENAME]]
+hierarchy -top [[TOPMODULE]]
+prep; flatten; synth
+clean -purge
+
+dfflibmap -liberty [[LIBRARY]]
+clean -purge
+abc -liberty [[LIBRARYABC]] -script +strash;ifraig;scorr;dc2;dretime;retime,{D};strash;&get,-n;&nf,{D};&put
+clean -purge
+
+write_verilog -noattr -noexpr [[NETLIST]]
