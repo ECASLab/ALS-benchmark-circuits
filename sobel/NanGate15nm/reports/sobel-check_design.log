@@ -1,0 +1,35 @@
+ 
+****************************************
+check_design summary:
+Version:     R-2020.09-SP5-1
+Date:        Fri Aug 19 16:00:08 2022
+****************************************
+
+                   Name                                            Total
+--------------------------------------------------------------------------------
+Inputs/Outputs                                                     13
+    Unloaded inputs (LINT-8)                                        4
+    Unconnected ports (LINT-28)                                     9
+
+Nets                                                                4
+    Unloaded nets (LINT-2)                                          4
+--------------------------------------------------------------------------------
+
+Warning: In design 'sobel', net 'p7[8]' driven by pin 'p7[8]' has no loads. (LINT-2)
+Warning: In design 'sobel', net 'p5[8]' driven by pin 'p5[8]' has no loads. (LINT-2)
+Warning: In design 'sobel', net 'p3[8]' driven by pin 'p3[8]' has no loads. (LINT-2)
+Warning: In design 'sobel', net 'p1[8]' driven by pin 'p1[8]' has no loads. (LINT-2)
+Warning: In design 'sobel', input port 'p1[8]' is unloaded. (LINT-8)
+Warning: In design 'sobel', input port 'p3[8]' is unloaded. (LINT-8)
+Warning: In design 'sobel', input port 'p5[8]' is unloaded. (LINT-8)
+Warning: In design 'sobel', input port 'p7[8]' is unloaded. (LINT-8)
+Warning: In design 'sobel', port 'p4[8]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[7]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[6]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[5]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[4]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[3]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[2]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[1]' is not connected to any nets. (LINT-28)
+Warning: In design 'sobel', port 'p4[0]' is not connected to any nets. (LINT-28)
+1

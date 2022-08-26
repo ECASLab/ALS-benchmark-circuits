@@ -1,0 +1,30 @@
+ 
+****************************************
+Report : area
+Design : int2float
+Version: R-2020.09-SP5-1
+Date   : Fri Aug 19 15:42:56 2022
+****************************************
+
+Library(s) Used:
+
+    NanGate_15nm_OCL (File: /mnt/vol_NFS_rh003/Estudiantes_Jorge_Castro/tech_libs/NanGate_15nm_OCL_v0.1_2014_06_Apache.A/front_end/timing_power_noise/NLDM/NanGate15nm.db)
+
+Number of ports:                           18
+Number of nets:                           136
+Number of cells:                          125
+Number of combinational cells:            125
+Number of sequential cells:                 0
+Number of macros/black boxes:               0
+Number of buf/inv:                         20
+Number of references:                      15
+
+Combinational area:                 36.126720
+Buf/Inv area:                        2.949120
+Noncombinational area:               0.000000
+Macro/Black Box area:                0.000000
+Net Interconnect area:      undefined  (No wire load specified)
+
+Total cell area:                    36.126720
+Total area:                 undefined
+1
