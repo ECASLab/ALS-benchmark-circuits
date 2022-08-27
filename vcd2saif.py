@@ -19,17 +19,16 @@ def saif_indent_level(level):
 	for i in range(level):
 		space += '  '
 	return space
-	
-	
+
 print('Print: '+str(argv))
 module_name = argv[1]
 vcd_file_path = argv[2]
 saif_file_path = argv[3]
 if len(argv)==5:
-	if argv[4]==True:
+	if argv[4]=='True':
 		verbose=True
 	else:
-		verbose==False
+		verbose=False
 
 #TODO: check saif information
 saifversion = '2.0'
@@ -44,10 +43,10 @@ timescale = '1 ps'
 
 def file_read(filename):
 	for row in open(filename,'r'):
-		yield row
+		yield row.split('\n')[0]
 
 # open vcd file
-vcd_file = file_read(vcd_file_path)
+
 
 # 1st pass: get variables
 var_list = []
@@ -57,6 +56,7 @@ prev_name = ''
 count=0
 total=0
 if verbose:
+	vcd_file = file_read(vcd_file_path)
 	for line in vcd_file:
 		total+=1
 		
