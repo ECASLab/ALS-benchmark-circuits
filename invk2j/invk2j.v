@@ -9,7 +9,7 @@
 
 `define BIT_WIDTH 32
 `define FRACTIONS 15
-`include "invk2j_combi.v"
+//`include "invk2j_combi.v"
 module invk2j(x, y, theta1, theta2, clk,rst);
 
 	input [`BIT_WIDTH-1:0] x, y;
@@ -18,17 +18,16 @@ module invk2j(x, y, theta1, theta2, clk,rst);
 	input clk;
 	input rst;
 
-	wire [`BIT_WIDTH-1:0] xy_sum, cos_theta2, sin_theta2;
+	wire [`BIT_WIDTH-1:0] xy_sum;
 
 	wire [`BIT_WIDTH-1:0] theta2_num, theta1_num, theta2_in,theta1_in;
-	wire [`BIT_WIDTH-1:0] x_sqr, y_sqr, part_y, part_x, cos12, sin12, part_1;
+	wire [`BIT_WIDTH-1:0] part_x;
 	reg [`BIT_WIDTH-2:0] throw_away;
 	reg signed_bit;
 
 
 	wire overflow_flag;
 	reg start, done;
-	parameter const_1 = `BIT_WIDTH'b10000000100001001000000000000000;  // -(11^2 + 12^2)
 	parameter const_2 = `BIT_WIDTH'b00000000100001000000000000000000;  // 11*12*2
 
 		// theta 2
@@ -39,17 +38,11 @@ module invk2j(x, y, theta1, theta2, clk,rst);
 		// theta2_in = theta2_num / (2*11*12)	
 		// theta2 = acos (theta2_in)
 
-		qmult #(`FRACTIONS,`BIT_WIDTH) x_multiplier(.i_multiplicand(x), .i_multiplier(x),
-	                                                    .o_result(x_sqr), .ovr(overflow_flag));
-		qmult #(`FRACTIONS,`BIT_WIDTH) y_multiplier(.i_multiplicand(y), .i_multiplier(y),
-		                                            .o_result(y_sqr), .ovr(overflow_flag));
-		qadd #(`FRACTIONS,`BIT_WIDTH) xy_adder(.a(x_sqr), .b(y_sqr), .c(xy_sum));
-		qadd #(`FRACTIONS,`BIT_WIDTH) num_adder(.a(const_1), .b(xy_sum), .c(theta2_num));
+		invk2j_combi #(`BIT_WIDTH, `FRACTIONS) Combi (.x(x), .y(y),.theta2_in(theta2_in), .theta1_in(theta1_in), .signed_bit(signed_bit), .theta2_num(theta2_num), .theta1_num(theta1_num), .part_x(part_x), .theta1(theta1), .theta2(theta2), .xy_sum(xy_sum),.overflow_flag(overflow_flag));
+
 		qdiv #(`FRACTIONS,`BIT_WIDTH) my_divider(.i_dividend(theta2_num), .i_divisor(const_2), 
 		                                         .i_start(1'b1), .i_clk(clk), .o_quotient_out(theta2_in), .rst(rst), 
 		                                         .o_complete(), .o_overflow());
-
-		acos_lut U0 (theta2_in,theta2);
 
 		
 
@@ -68,18 +61,6 @@ module invk2j(x, y, theta1, theta2, clk,rst);
 
 
 
-
-
-		cos_lut U1 (theta2,cos_theta2);
-		sin_lut U2 (theta2,sin_theta2);
-		qmult #(`FRACTIONS,`BIT_WIDTH) cos_multiplier(.i_multiplicand(cos_theta2), .i_multiplier(`BIT_WIDTH'b00000000000001100000000000000000),
-		                                              .o_result(cos12), .ovr(overflow_flag));		
-		qmult #(`FRACTIONS,`BIT_WIDTH) sin_multiplier(.i_multiplicand(sin_theta2), .i_multiplier(`BIT_WIDTH'b00000000000001100000000000000000), 
-		                                              .o_result(sin12), .ovr(overflow_flag));
-		qadd #(`FRACTIONS,`BIT_WIDTH) n_adder(.a(cos12), .b(`BIT_WIDTH'b00000000000001011000000000000000), .c(part_1));
-		qmult #(`FRACTIONS,`BIT_WIDTH) multiplier_1(.i_multiplicand(part_1), .i_multiplier(y), .o_result(part_y), .ovr(overflow_flag));
-		qmult #(`FRACTIONS,`BIT_WIDTH) multiplier_2(.i_multiplicand(sin12), .i_multiplier(x), .o_result(part_x), .ovr(overflow_flag));
-
 	always@(part_x) begin
 		if (part_x[31]) begin
 			signed_bit=1'b0;
@@ -88,11 +69,9 @@ module invk2j(x, y, theta1, theta2, clk,rst);
 			signed_bit=1'b1;
 		end
 	end
-		qadd #(`FRACTIONS,`BIT_WIDTH) adder_123 (.a({signed_bit,part_x[30:0]}), .b(part_y), .c(theta1_num));
 		qdiv #(`FRACTIONS,`BIT_WIDTH) m_divider(.i_dividend(theta1_num), .i_divisor(xy_sum),
 		                                        .i_start(1'b1), .i_clk(clk), .rst(rst), .o_quotient_out(theta1_in), 
 		                                        .o_complete(), .o_overflow());
-		asin_lut U3 (theta1_in,theta1);
 
 endmodule
 

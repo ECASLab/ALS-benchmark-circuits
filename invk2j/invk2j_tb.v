@@ -1,4 +1,4 @@
-`timescale 1ns / 1ps
+`timescale 10ns / 1ps
 
 module invk2j_tb(); 
 
@@ -18,9 +18,10 @@ module invk2j_tb();
 
  initial begin
  $display("-- Begining Simulation --");
-
+ 
  $dumpfile("./invk2j.vcd");
- $dumpvars(0,invk2j_tb);
+ $dumpvars(0, invk2j_tb);
+
  file=$fopen("output.txt","w");
  mem=$fopen("dataset","r");
  in0 = 0;
@@ -29,10 +30,10 @@ module invk2j_tb();
  #1000
  rst = 0;
  #1000
- for (i=0;i<1000000;i=i+1) begin
+ for (i=0;i<10;i=i+1) begin
   temp=$fscanf(mem,"%h %h \n",in0,in1);
   #1000
-  $fwrite(file, "%d\n",{out0,out1});
+  $fwrite(file, "%d \n",{out0,out1});
   $display("-- Progress: %d/1000000 --",i+1);
  end
  $fclose(file);
