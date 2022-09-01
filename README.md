@@ -2,7 +2,7 @@
 
 A Benchmark set of 28 circuits for ALS applications.
 
-This benchmarks are a compilation of some benchmarks circuits included in AxBench, EPFL and AxLS sets. Each Benchmark is written in verilog with a source and a testbench. Both testbench and datasets are generated using "tb_generator.py".
+This benchmarks are a compilation of some benchmarks circuits included in AxBench, EPFL, AxLS sets and other sources. Each Benchmark is written in verilog with a source and a testbench. Both testbench and datasets are generated using "tb_generator.py".
 
 ## AxBench:
 
@@ -206,5 +206,19 @@ This benchmarks are a compilation of some benchmarks circuits included in AxBenc
 **Outputs:** An output of 16 bits.
 **Tag:** WT_8b
 
+## Benchmarks from other sources
 
+### 29. Decision Tree
+**Description:** A trained Decision Tree circuit.
+**Application/Type:**  ML, Combinational
+**Inputs:** 30 inputs of 10 bits.
+**Outputs:** An output of 5 bits.
+**Tag:** DTree
+
+### 30. Random Forest
+**Description:** A trained Random Forest circuit.
+**Application/Type:**  ML, Combinational
+**Inputs:** 52 inputs of 10 bits.
+**Outputs:** An output of 5 bits.
+**Tag:** RForest
 
