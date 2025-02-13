@@ -88,21 +88,27 @@ def get_random(bits: int, distribution='uniform', samples=1, **kwargs):
 
     return data
 
-# from matplotlib import pyplot as plt
-# from scipy.interpolate import UnivariateSpline
-# path='/home/roger/Desktop/Electronica/ALS-benchmark-circuits/sample.txt'
-# dataset_gen(path,[1,2,3,4,5,6,7,8],samples=1000000,distribution='uniform', variance=1)
+if __name__ == "__main__":
 
-# data=np.loadtxt(path)
-# data=np.transpose(data)
+    # To generate some histograms and verify random distribution
+    from matplotlib import pyplot as plt
+    from scipy.interpolate import UnivariateSpline
+    path='./sample.txt'
+    dataset_gen(path,[1,2,3,4,5,6,7,8],samples=1000000,distribution='uniform', variance=1)
 
+    data = []
+    with open(path) as file:
+        for line in file:
+            data.append(np.array([int(x, 16) for x in line.split()]))
 
-# N=1000
-# n=N//1
-# for d in data:
-#     p,x=np.histogram(d,bins=n)
-#     x=x[:-1]+(x[1]-x[0])/2
-#     f=UnivariateSpline(x,p,s=n)
-#     plt.plot(x,f(x))
-#     plt.show()
+    data=np.transpose(data)
+
+    N=1000
+    n=N//1
+    for d in data:
+        p,x=np.histogram(d,bins=n)
+        x=x[:-1]+(x[1]-x[0])/2
+        f=UnivariateSpline(x,p,s=n)
+        plt.plot(x,f(x))
+        plt.show()
 
